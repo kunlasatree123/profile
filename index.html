@@ -9,6 +9,9 @@
         <!-- =====BOX ICONS===== -->
         <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
 
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
         <title>Portfolio website kunlasatree</title>
     </head>
     <body>
@@ -16,7 +19,7 @@
         <header class="l-header">
             <nav class="nav bd-grid">
                 <div>
-                    <a href="#" class="nav__logo">Kunlasatree Maneekul</a>
+                    <a href="#" class="nav__logo">PORTFOLIO</a>
                 </div>
 
                 <div class="nav__menu" id="nav-menu">
@@ -24,7 +27,7 @@
                         <li class="nav__item"><a href="#home" class="nav__link active-link">Home</a></li>
                         <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
                         <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
-                        <li class="nav__item"><a href="#projects" class="nav__link">Projects</a></li>
+                        <!-- <li class="nav__item"><a href="#projects" class="nav__link">Projects</a></li> -->
                         <li class="nav__item"><a href="#work" class="nav__link">Certificates</a></li>
                         <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
                     </ul>
@@ -39,29 +42,23 @@
         <main class="l-main">
             <!--===== HOME =====-->
             <section class="home bd-grid" id="home">
-                <div class="home__data">
-                    <br class="home__title"><h1>MY PORTFOLIO</h1><br>This website was developed to collect my basic <br>information and achievements.<br> </h1>
-                    
-                    <!-- <a href="#" class="button">Contact</a> -->
-                </div>
-
-                <div class="home__social">
-                    <a href="" class="home__social-icon"><i class='bx bxl-linkedin'></i></a>
-                    <a href="" class="home__social-icon"><i class='bx bxl-github' ></i></a>
-                </div>
-
-                <div class="home__img">
-                    <svg class="home__blob" viewBox="0 0 479 467" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                        <mask id="mask0" mask-type="alpha">
-                            <path d="M9.19024 145.964C34.0253 76.5814 114.865 54.7299 184.111 29.4823C245.804 6.98884 311.86 -14.9503 370.735 14.143C431.207 44.026 467.948 107.508 477.191 174.311C485.897 237.229 454.931 294.377 416.506 344.954C373.74 401.245 326.068 462.801 255.442 466.189C179.416 469.835 111.552 422.137 65.1576 361.805C17.4835 299.81 -17.1617 219.583 9.19024 145.964Z"/>
-                        </mask>
-                        <g mask="url(#mask0)">
-                            
-                            <image class="home__blob-img" x="50" y="60" href="assets/img/profil.png"/>
-                        </g>
-                    </svg>
+                <div class="home__flex">
+                    <div class="home__content-left">
+                        <div class="home__data">
+                            <br class="home__title"><h1>MY PORTFOLIO</h1><br>This website was developed to collect my basic <br>information and achievements.<br> </h1>
+                            <!-- <a href="#" class="button">Contact</a> -->
+                        </div>
+                        <div class="home__social">
+                            <!-- <a href="" class="home__social-icon"><i class='bx bxl-linkedin'></i></a> -->
+                            <a href="https://github.com/kunlasatree123" target="_blank" class="home__social-icon"><i class='bx bxl-github' ></i></a>
+                        </div>
+                    </div>
+                    <div class="home__img-right">
+                        <img src="assets/img/home.jpg" alt="Profile" />
+                    </div>
                 </div>
             </section>
+            
 
             <!--===== ABOUT =====-->
             <section class="about section " id="about">
@@ -73,72 +70,53 @@
                     </div>
                     
                     <div>
-                        <h2 class="about__subtitle">I'am Kunlasatree</h2>
-                        <p class="about__text">Never stop learning because life is about learning.</p>           
+                        <h2 class="about__subtitle">Never stop learning because life is about learning.</h2>
+                        <p class="about__text">Hello, my name is Kunlasatree Maneekul, or you can call me Pai. 
+                            I was born on November 4, 2002. My motto is: "I can do everything."<br>
+                            I am currently pursuing a Bachelor’s degree in Information Technology at Rajamangala University of Technology Lanna (RMUTL), Lampang Campus, with a GPA of 3.76<br>
+                            I have a strong passion for technology and am always committed to continuous learning and self-improvement. I possess skills in both Frontend and Backend web development, 
+                            with experience in Object-Oriented Programming (OOP) and various frameworks. In addition, I am also skilled in working as an IT Technician, handling troubleshooting and technical support tasks.<br>
+                            Strengths: I work well in a team, can perform effectively under pressure, maintain a positive mindset, and enjoy challenges.
+                        </p>           
                     </div>                                   
                 </div>
             </section>
 
             <!--===== SKILLS =====-->
             <section class="skills section" id="skills">
-                <h2 class="section-title">Skills</h2>
-
-                <div class="skills__container bd-grid">          
-                    <div>
-                        <h2 class="skills__subtitle">Profesional Skills</h2>
-                        <p class="skills__text"></p>
-                        <div class="skills__data">
-                            <div class="skills__names">
-                                <i class='bx bxl-html5 skills__icon'></i>
-                                <span class="skills__name">HTML5</span>
-                            </div>
-                            <div class="skills__bar skills__html">
-
-                            </div>
-                            <div>
-                                <span class="skills__percentage">95%</span>
-                            </div>
-                        </div>
-                        <div class="skills__data">
-                            <div class="skills__names">
-                                <i class='bx bxl-css3 skills__icon'></i>
-                                <span class="skills__name">CSS3</span>
-                            </div>
-                            <div class="skills__bar skills__css">
-                                
-                            </div>
-                            <div>
-                                <span class="skills__percentage">85%</span>
-                            </div>
-                        </div>
-                        <div class="skills__data">
-                            <div class="skills__names">
-                                <i class='bx bxl-javascript skills__icon' ></i>
-                                <span class="skills__name">JAVASCRIPT</span>
-                            </div>
-                            <div class="skills__bar skills__js">
-                                
-                            </div>
-                            <div>
-                                <span class="skills__percentage">65%</span>
-                            </div>
-                        </div>
-                        <div class="skills__data">
-                            <div class="skills__names">
-                                <i class='bx bxs-paint skills__icon'></i>
-                                <span class="skills__name">UX/UI</span>
-                            </div>
-                            <div class="skills__bar skills__ux">
-                                
-                            </div>
-                            <div>
-                                <span class="skills__percentage">85%</span>
-                            </div>
-                        </div>
+                <h2 class="section-title">Skills Information</h2>
+                <div class="skills__modern-grid">
+                    <div class="skills__card">
+                        <div class="skills__icon-title"><i class='bx bx-code-alt'></i> <span>Developer</span></div>
+                        <ul class="skills__list">
+                            <li><span class="skills__badge">HTML</span></li>
+                            <li><span class="skills__badge">CSS</span></li>
+                            <li><span class="skills__badge">PHP</span></li>
+                            <li><span class="skills__badge">SQL</span></li>
+                            <li><span class="skills__badge">JavaScript</span></li>
+                            <li><span class="skills__badge">React</span></li>
+                            <li><span class="skills__badge">C++</span></li>
+                            <li><span class="skills__badge">Python</span></li>
+                        </ul>
                     </div>
-                    
-                    <div>              
-                        <img src="assets/img/cer33.jpg" alt="" class="skills__img">
+                    <div class="skills__card">
+                        <div class="skills__icon-title"><i class='bx bx-desktop'></i> <span>Software</span></div>
+                        <ul class="skills__list">
+                            <li><span class="skills__badge">Microsoft Office</span></li>
+                            <li><span class="skills__badge">Figma</span></li>
+                            <li><span class="skills__badge">Arduino</span></li>
+                            <li><span class="skills__badge">PhotoShop</span></li>
+                            <li><span class="skills__badge">Github</span></li>
+                            <li><span class="skills__badge">VS CODE</span></li>
+                            <li><span class="skills__badge">ChatGPT</span></li>
+                        </ul>
+                    </div>
+                    <div class="skills__card">
+                        <div class="skills__icon-title"><i class='bx bx-bulb'></i> <span>Other</span></div>
+                        <ul class="skills__list">
+                            <li><span class="skills__badge">Computer Techniques</span></li>
+                            <li><span class="skills__badge">Web Developer</span></li>
+                        </ul>
                     </div>
                 </div>
             </section>
@@ -148,39 +126,63 @@
                 <h2 class="section-title">Certificates</h2>
 
                 <div class="work__container bd-grid">
-                    <a href="" class="work__img">
-                        <img src="assets/img/work1.jpg" alt="">
-                    </a>
-                    <a href="" class="work__img">
-                        <img src="assets/img/work2.jpg" alt="">
-                    </a>
-                    <a href="" class="work__img">
-                        <img src="assets/img/work3.jpg" alt="">
-                    </a>
-                    <!-- <a href="" class="work__img">
-                        <img src="assets/img/work4.jpg" alt="">
-                    </a>
-                    <a href="" class="work__img">
-                        <img src="assets/img/work5.jpg" alt="">
-                    </a>
-                    <a href="" class="work__img">
-                        <img src="assets/img/work6.jpg" alt="">
-                    </a> -->
+                    <div class="work__img" onclick="openModal('assets/img/php web.jpg')" style="cursor:pointer;">
+                        <img src="assets/img/php web.jpg" alt="">
+                    </div>
+                    <div class="work__img" onclick="openModal('assets/img/IC3 GS6 Level 1.jpg')">
+                        <img src="assets/img/IC3 GS6 Level 1.jpg" alt="">
+                    </div>
+                    <div class="work__img" onclick="openModal('assets/img/IT Exit Exam.jpg')">
+                        <img src="assets/img/IT Exit Exam.jpg" alt="">
+                    </div>
+                    <div class="work__img" onclick="openModal('assets/img/socail commerce.jpg')">
+                        <img src="assets/img/socail commerce.jpg" alt="">
+                    </div>
+                    <div class="work__img" onclick="openModal('assets/img/UX-UI.jpg')">
+                        <img src="assets/img/UX-UI.jpg" alt="">
+                    </div>
+            <!-- Modal for certificate preview -->
+            <div id="imgModal" class="modal" style="display:none; position:fixed; z-index:9999; left:0; top:0; width:100vw; height:100vh; background:rgba(0,0,0,0.8); justify-content:center; align-items:center;">
+                <span class="modal-close" onclick="closeModal()" style="position:absolute; top:30px; right:40px; color:#fff; font-size:2.5rem; cursor:pointer; z-index:10001;">&times;</span>
+                <img id="modalImg" src="" alt="Certificate" style="max-width:90vw; max-height:80vh; border-radius:1rem; box-shadow:0 4px 32px rgba(0,0,0,0.5); background:#fff; padding:1rem;" />
+            </div>
+                    
                 </div>
             </section>
 
             <!--===== CONTACT =====-->
             <section class="contact section" id="contact">
                 <h2 class="section-title">Contact</h2>
-
-                <!-- <div class="contact__container bd-grid">
-                    <form action="" class="contact__form">
-                        <input type="text" placeholder="Name" class="contact__input">
-                        <input type="mail" placeholder="Email" class="contact__input">
-                        <textarea name="" id="" cols="0" rows="10" class="contact__input"></textarea>
-                        <input type="button" value="Enviar" class="contact__button button">
-                    </form>
-                </div> -->
+                <div class="contact__info">
+                    <div class="contact__item">
+                        <i class='bx bxs-phone contact__icon'></i>
+                        <div>
+                            <span class="contact__label">Phone</span>
+                            <span class="contact__value">0987601553</span>
+                        </div>
+                    </div>
+                    <div class="contact__item">
+                        <i class='bx bxs-envelope contact__icon'></i>
+                        <div>
+                            <span class="contact__label">Email</span>
+                            <span class="contact__value">kunlasatree28475@gmail.com</span>
+                        </div>
+                    </div>
+                    <div class="contact__item">
+                        <i class='bx bxl-github contact__icon'></i>
+                        <div>
+                            <span class="contact__label">Website</span>
+                            <a href="https://github.com/kunlasatree123" target="_blank" class="contact__value" target="_blank">https://github.com/kunlasatree123</a>
+                        </div>
+                    </div>
+                    <div class="contact__item">
+                        <i class='bx bxs-map contact__icon'></i>
+                        <div>
+                            <span class="contact__label">Location</span>
+                            <span class="contact__value">193 Moo 2,Ban Kha Klang, Ban Kha Sub-district, Mueang District, Lampang Province 52100, Thailand</span>
+                        </div>
+                    </div>
+                </div>
             </section>
         </main>
 
@@ -188,7 +190,7 @@
         <footer class="footer">
             <p class="footer__title">Kunlasatree</p>
             <div class="footer__social">
-                <a href="#" class="footer__icon"><i class='bx bxl-facebook' ></i></a>
+                <a href="https://www.facebook.com/prai.maneekul?locale=th_TH" target="_blank" class="footer__icon"><i class='bx bxl-facebook' ></i></a>
                 <a href="#" class="footer__icon"><i class='bx bxl-instagram' ></i></a>
                 <a href="#" class="footer__icon"><i class='bx bxl-twitter' ></i></a>
             </div>
@@ -201,5 +203,24 @@
 
         <!--===== MAIN JS =====-->
         <script src="assets/js/main.js"></script>
+        <script>
+        function openModal(imgSrc) {
+            var modal = document.getElementById('imgModal');
+            var modalImg = document.getElementById('modalImg');
+            modalImg.src = imgSrc;
+            modal.style.display = 'flex';
+        }
+        function closeModal() {
+            var modal = document.getElementById('imgModal');
+            modal.style.display = 'none';
+        }
+        // Close modal on background click
+        document.addEventListener('DOMContentLoaded', function() {
+            var modal = document.getElementById('imgModal');
+            modal.addEventListener('click', function(e) {
+                if (e.target === modal) closeModal();
+            });
+        });
+        </script>
     </body>
 </html>
